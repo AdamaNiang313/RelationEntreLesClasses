@@ -1,12 +1,11 @@
 import entity.Clients;
 import entity.Dettes;
 import entity.Paiement;
+import java.util.Scanner;
 import service.ClientService;
 import vue.ClientVue;
 import vue.DetteVue;
 import vue.PaiementVue;
-
-import java.util.Scanner;
 
 public class App {
 
@@ -14,14 +13,13 @@ public class App {
     private static int idClient;
     public static void main(String[] args) {
         menu();
-
     }
 
     public static void menu() {
         int choix;
         do {
             System.out.println("Faire votre choix:");
-            System.out.println("1. Ajouter un client avec dette:");
+            System.out.println("1. Ajouter un client avec dette:"); 
             System.out.println("2. Afficher client:");
             System.out.println("3. Chercher un numéro:");
             System.out.println("4. Ajouter dette à un client:");
